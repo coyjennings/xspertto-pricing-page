@@ -59,3 +59,79 @@
 	background-color: #437eeb !important;
 	color: #ffffff !important;
 }
+
+/* plan-comparison-table--collapsed */
+
+.tablepress td {
+    border: 1px solid #ddd !important;
+}
+.tablepress tbody tr:first-child td {
+    border-top: 1px solid #ddd !important;
+}
+.tablepress tbody tr td .bt{
+    border-width: 10px!important;
+    border-color: rgba(0,0,0,0) !important;
+    border-radius: 5px!important;
+    font-family: 'Rubik',Helvetica,Arial,Lucida,sans-serif!important;
+    text-transform: uppercase!important;
+    transition: letter-spacing 300ms ease 0ms !important;
+    padding: 1em 1.5em!important;
+}
+.tablepress tbody tr td .bt.essentials {
+    color: #525f81!important;
+    background-color: rgba(82,95,129,0.2) !important;
+}
+.tablepress tbody tr td .bt.start-up {
+    color: #ffffff!important;
+    background-color: #525f81 !important;
+}
+.tablepress tbody tr td .bt.part-time {
+    color: #ffffff!important;
+    background-color: #437eeb !important;
+}
+.tablepress tbody tr td .bt.full-time {
+    color: #ffffff!important;
+    background-color: #313e5b !important;
+}
+#tablepress-1 tbody tr:last-child td {
+    border-left: 0 !important;
+    border-right: 0 !important;
+    border-bottom: 0 !important;
+}
+td.column-1 {
+    width: 18vw !important;
+}
+td.column-1 h4 {
+    text-align: left !important;
+}
+td h4, td h6 {
+    padding-bottom: 0 !important;
+    font-size: 1.2em !important;
+}
+td.column-2, td.column-3, td.column-4, td.column-5 {
+    text-align: center !important;
+}
+.des_show {
+    padding: 0 !important;
+}
+.des_show.closed:before {
+    font-family: 'ETmodules';
+    padding-right: 3px;
+    content:"\35";
+}
+.des_show.opened:before {
+    font-family: 'ETmodules';
+    padding-right: 3px;
+    content:"\33";
+}
+.tablepress {
+    margin-bottom: 0 !important;
+}
+.plan-comparison-table.plan-comparison-table--collapsed {
+    max-height: 320px;
+    overflow: hidden;
+    transition: max-height .25s ease-out;
+}
+.plan-comparison-table {
+    max-height: 9999px;
+}

@@ -42,4 +42,47 @@
 
     })(jQuery);
 
+    {/* plan-comparison-table--collapsed */}
+    (function($){
+
+        function compare_feature() {
+
+            $('.rv_button').click(function (event) {
+                event.preventDefault();
+
+                if (!$('.plan-comparison-table').hasClass('plan-comparison-table--collapsed')) {
+                    $('.plan-comparison-table').addClass('plan-comparison-table--collapsed');
+                }
+                else {
+                    $('.plan-comparison-table').removeClass('plan-comparison-table--collapsed');
+                }
+
+            });
+
+        }
+
+        $(window).load(function() {
+            compare_feature();
+        });
+
+    })(jQuery);
+
+    jQuery(document).ready(function() {
+
+        jQuery('#price').hide();
+        jQuery('#price_show').click(function(e){
+            e.preventDefault();
+            jQuery("#price").slideToggle();
+            jQuery('#price_show').toggleClass('opened closed');
+        });
+
+        jQuery('#visitor').hide();
+        jQuery('#visitor_show').click(function(e){
+            e.preventDefault();
+            jQuery("#visitor").slideToggle();
+            jQuery('#visitor_show').toggleClass('opened closed');
+        });
+
+    });
+
 </script>
