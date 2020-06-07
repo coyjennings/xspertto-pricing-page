@@ -1,0 +1,61 @@
+#main .container {
+  max-width: 100% !important;
+  padding-left: 0 !important;
+  padding-right: 0 !important;
+}
+.dvcs_pricing {
+	opacity: 0 !important;
+}
+.dvcs_pricing.dvcs_active {
+	opacity: 1 !important;
+}
+.dvcs_pricing_1 {
+	visibility: hidden !important;
+}
+.dvcs_pricing_1.dvcs_active {
+	visibility: visible !important;
+}
+.dvcs_pricing_1.dvcs_active .et_pb_pricing_table {
+	z-index: 1 !important;
+}
+.dvcs_pricing_1.dvcs_active .et_pb_featured_table {
+	z-index: 11 !important;
+}
+.dvcs_pricing_2,
+.dvcs_pricing_2.et_hover_enabled:hover {
+/*    position: absolute !important;
+    top: 0 !important;
+    width: 100% !important; */
+	visibility: hidden !important;
+}
+.dvcs_pricing_2.dvcs_active {
+    z-index: 10 !important;
+	visibility: visible !important;
+}
+/* End IMPORTANT */
+
+/* VB fixes */
+.et-fb .dvcs_pricing {
+	opacity: 1 !important;
+}
+.et-fb .dvcs_pricing_2 {
+	visibility: visible !important;
+}
+/* END VB fixes */
+
+.dvcs_switch_btn_1, .dvcs_switch_btn_1:hover {
+	background-color: #ffffff !important;
+	color: #437eeb !important;
+}
+.dvcs_switch_btn_1.dvcs_active, .dvcs_switch_btn_1.dvcs_active:hover {
+	background-color: #437eeb !important;
+	color: #ffffff !important;
+}
+.dvcs_switch_btn_2, .dvcs_switch_btn_2:hover {
+	background-color: #ffffff !important;
+	color: #437eeb !important;
+}
+.dvcs_switch_btn_2.dvcs_active, .dvcs_switch_btn_2.dvcs_active:hover {
+	background-color: #437eeb !important;
+	color: #ffffff !important;
+}
