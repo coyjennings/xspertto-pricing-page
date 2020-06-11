@@ -1,5 +1,6 @@
 <script type="text/javascript">
 
+{/* Typescript errors don't solve it */}
     (function($){
 
         function dvcs_switch_pricing_periods() {
