@@ -1,3 +1,4 @@
+<script src="https://cdnjs.cloudflare.com/ajax/libs/floatthead/2.2.1/jquery.floatThead.min.js"></script>
 <script type="text/javascript">
 
 {/* Typescript errors don't solve it */}
@@ -86,4 +87,13 @@
 
     });
 
+</script>
+
+<script src="https://code.jquery.com/jquery.min.js"></script>
+    <!-- Latest compiled and minified JavaScript -->
+<script src="https://unpkg.com/floatthead"></script>
+<script>
+    $(document).ready(function () {
+        $("#tablepress-1").floatThead({ top: 65 });
+    });
 </script>

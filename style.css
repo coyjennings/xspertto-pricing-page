@@ -61,8 +61,13 @@
 }
 
 /* plan-comparison-table--collapsed */
-
-.tablepress td {
+.tablepress th {
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+    z-index: 10;
+}
+.tablepress td, .tablepress th {
     border: 1px solid #ddd !important;
 }
 .tablepress tbody tr:first-child td {
@@ -104,7 +109,7 @@ td.column-1 {
 td.column-1 h4 {
     text-align: left !important;
 }
-td h4, td h6 {
+th h4, td h4, td h6 {
     padding-bottom: 0 !important;
     font-size: 1.2em !important;
 }
