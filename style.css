@@ -140,3 +140,17 @@ td.column-2, td.column-3, td.column-4, td.column-5 {
 .plan-comparison-table {
     max-height: 9999px;
 }
+#compare_button {
+    color: #FFFFFF!important;
+    border-width: 10px!important;
+    border-color: rgba(0,0,0,0);
+    border-radius: 5px!important;
+    letter-spacing: 1px !important;
+    font-size: 13px;
+    font-family: 'Rubik',Helvetica,Arial,Lucida,sans-serif!important;
+    text-transform: uppercase!important;
+    background-color: #437eeb;
+    font-weight: 500;
+    padding: 0px 15px;
+    cursor: pointer;
+}

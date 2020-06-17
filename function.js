@@ -92,8 +92,18 @@
 <script src="https://code.jquery.com/jquery.min.js"></script>
     <!-- Latest compiled and minified JavaScript -->
 <script src="https://unpkg.com/floatthead"></script>
-<script>
+    <script>
     $(document).ready(function () {
-        $("#tablepress-1").floatThead({ top: 65 });
+        var $table = $('#tablepress-1');
+
+        $("#compare_button").on("click", function() {
+            var el = $(this);
+            el.text() == el.data("text-swap")
+                ? el.text(el.data("text-original"))
+                : el.text(el.data("text-swap"));
+            el.text() == el.data("text-swap")
+                ? $table.floatThead({top: 65})
+                : $table.floatThead('destroy');
+        });
     });
 </script>
